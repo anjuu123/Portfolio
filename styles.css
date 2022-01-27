@@ -1,186 +1,173 @@
-/* DESKTOP RESPONSIVE */
-/*HEADING AND NAV BAR*/
-@media only screen and (min-width: 850px) {
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:700|Roboto:400");
 
 body {
-    background-color:#fff
-}
-
-nav{
-top: 0;
-background-color: black;
-  width: 100%;
-  height: 60px;
-  left: 0;
-}
-
-.icon {
-    height: 40px;
-    width: 80px;
-    padding-left:5px;
-    height:60px;
-    width: 10rem;
-}
-
-nav ul {
-    list-style: none;
-    float: right;
-}
-
-nav ul li {
-    display: inline-block;
-    margin: 0;
-    padding: 10px 30px;
-
-}
-
-nav a {
-    width: 100%;
-    height: 100%;
-    color: #fff;
-    text-decoration: none;
-    font-size: 23px;
-    letter-spacing: 1px;
-}
-
-
-/* ABOUT US SECTION */
-
-#container {
-    display:inline-flex;
-}
-
-.img {
-    padding: 70px;
-}
-
-.bio {
-  float: right;
-  padding: 5rem 25rem;
-}
-
-
-/* PROJECTS SECTION*/
-h2 {
-    text-align: center;
-    padding: 30px;
-    font-size: 40px;
-}
-
-#projects {
-    background-color:#fff;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.project-grid ul{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    list-style: none;
-}
-
-.project-grid li {
-    padding: 20px 30px;
-}
-
-
-/*SKILLS SECTION */
-
-#skills {
-    margin-top: 0px;
-    background-color:brown;
+    line-height: 1.2;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    color: #4c4c4c; background: #1c92d2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f2fcfe, #1c92d2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f2fcfe, #1c92d2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+      
    
 }
-
-.my-skill ul{
-    padding: 10px;
-    text-align: center;
-    list-style: none;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    font-size: 30px;
-    text-transform: uppercase;
-    color: lightsalmon;
-}
-
-
-/*CONTACT ME SECTION */
-
-.contact {
-    padding :40px 20px;
-    border: 3px solid grey;
-    width: 40rem;
-    align-items: center;
-    margin-left: 40rem;
-    display: inline-block;
-    margin-bottom: 10px;
-    
-    
-}
-
-label {
-    font-size: 22px;
-    margin-top: 15px;
-    margin-left: 30px;
-}
-
-.form-control {
-    text-align: center;
-    height: 55px;
-    width: 30rem;
-   margin-top: 25px;
-   margin-left: 40px;
-   
-}
-
-.box {
-    margin-top: 40px;
-    padding: 30px ;
-    width: 30rem;
-    margin-left: 40px;
-    
-}
-
-.btn-primary {
-padding:15px;
-margin-top: 10px;
-margin-left: 15rem;
-
-}
-
-
-/*FOOTER SECTION */
-
-footer {
-    background-color: black;
-    padding: 20px;
-    margin-top: 10px;
-}
-
-footer p {
-    color: #fff;
-    text-align: center;
-    font-size: 25px;
-}
-
-}
-
-
-
-
-/* TABLET RESPONSIVE */
-
-@media only screen and (min-width: 650px) {
-
-    #projects {
-        grid-column:1/2 1/2;
-    }
-    
-    .project-grid ul{
-        display: grid;
-        grid-column: 1/2 1/2;
-    }
-    
   
+
+  /* For paragraph */
+  p {
+    font-weight: 400;
+    color: #4c4c4c;
+    font-size: 15px;
+    line-height: 1.8;
+    font-family: "Roboto", sans-serif;
+  }
+
+
+  /* for all heading */
+  h1, h2, h3, h4, h5, h6 {
+    color: #000;
+    font-family: "Playfair Display", serif;
+    line-height: 1.2;
+  }
+  
+/* PHONE */
+@media screen and (max-width: 576px) {
+
+    /* HEADER SECTION */
+nav {
+    background-color: black;
+}
+    .icon {
+      height: 60px;
+      width: 80px;
+
+    }
+     
+    nav ul {
+       display: none;
+    }
+
+    nav i.far.fa-bars{
+        display:inline;
+        color: #fff;
+        font-size: 30px;
+        float: right;
+        padding: 16px;
+        cursor: pointer;
+        
+      }
+
+      /* ABOUT ME SECTION */
+.container {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+     
+
+.myimg {
+    border-radius: 50%;
+    border: 2px solid darkmagenta;
+    margin-top: 30px;
+    margin-left: 8rem;
+
+}
+
+.bio h2 {
+    text-align: center;
+    padding-top: 10px;
+}
+.bio p {
+    font-size: 18px;
+}
+
+.resume-btn{
+    width:10rem;
+    margin-left: 10rem;
+}
+
+
+
+
+
+/* SKILLS SECTION */
+
+.skills{
+    padding: 5rem 0 2.0rem 0;
+}
+
+.skills .title{
+    width: 70%;
+    margin:1.3rem auto;
+    text-align:center;
+}
+
+.skills .row{
+    margin: 1rem 0;
+}
+
+.skills .item{
+    padding:0.5rem 0;
+    margin: 0.3rem 0;
+}
+
+.skills .item-text{
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 600;
+    font-size: 1.3rem;
+    position: relative;
+}
+    .skills .item-text span:last-child{
+        position: absolute;
+    }
+
+    .skills .item-text .w-90{
+        margin-left: 85%;
+    }
+    .skills .item-text .w-85{
+        margin-left: 80%;
+    }
+    .skills .item-text .w-75{
+        margin-left: 70%;
+    }
+    .skills .item-text .w-65{
+        margin-left: 60%;
+    }
+    
+   
+    .progress{
+        margin: 0.8rem 0;
+        border-radius: 10px;
+        height: 16px;
+        width: 100%;
+        background-color: white;
+        overflow: hidden;
+    }
+    .progress-bar{
+        background-color:darkviolet;
+        height: 100%;
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px;
+    }
+    .progress-bar.w-85{
+        width: 85%;
+    }
+    .progress-bar.w-80{
+        width: 80%;
+    }
+    .progress-bar.w-70{
+        width: 70%;
+    }
+    .progress-bar.w-60{
+        width: 60%;
+ 
+ 
+    }
+
+
+
+    /* MY PROJECTS SECTION */
 
 
 }
