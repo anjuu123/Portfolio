@@ -8,7 +8,7 @@ $(document).ready(function(){
         margin:10,
         responsiveClass:true,
         center:true,
-        nav:true,
+        nav:false,
         navText:[
           " <i class='fa fa-angle-left'></i>",
           " <i class='fa fa-angle-right'></i>"
@@ -20,7 +20,8 @@ $(document).ready(function(){
                
             },
             600:{
-                items:2,
+                items:1,
+                
                 
             },
             1000:{
@@ -29,4 +30,25 @@ $(document).ready(function(){
             }
         }
     })
+    });
+
+
+
+    //scroll arrow
+
+    $(window).scroll(function() {
+        var height = $(window).scrollTop();
+        if (height > 100) {
+            $('#back2Top').fadeIn();
+        } else {
+            $('#back2Top').fadeOut();
+        }
+    });
+    $(document).ready(function() {
+        $("#back2Top").click(function(event) {
+            event.preventDefault();
+            $("html, body").animate({ scrollTop: 0 }, "slow");
+            return false;
+        });
+    
     });

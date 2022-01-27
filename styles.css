@@ -1,29 +1,41 @@
 
-   @import url("https://fonts.googleapis.com/css?family=Playfair+Display:700|Roboto:400");
-   /* HEADER SECTION */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
 
-    .nav-link{
-      color: #fff;
+body{
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+   /* HEADER SECTION */
+  
+
+     .nav-link{
+        color: teal;
       font-size: 1rem;
       font-weight: 700;
       cursor: pointer;
       text-decoration: none;
-   
+  } 
 
-  }
-
-  .nav-link:hover{
-      color: black;
+   .nav-link:hover{
       background-color: teal;
-  }
+  } 
 
-  .navbar-brand {
+  /* .navbar-brand {
       font-size: 1.25rem;
       font-weight: 800;
-      color: #fff;
+      color: teal;
       cursor: pointer;
       text-decoration: none;
-  }
+  } */
+
+.navbar-toggler{
+    margin-right: 10px;
+}
+
+
 
 
   /* MAIN SECTION CSS */
@@ -85,11 +97,13 @@ box-shadow: 2px;
         
       }
 /* FOR ALL H1 HEADER STYLING */
+
      h1{
 font-size: 3rem;
 font-weight: 900;
-margin-top: 15px;
+margin-top: 3rem;
 text-align: center;
+text-transform: uppercase;
       }
 
    .bio p{
@@ -247,7 +261,7 @@ text-align: center;
   background-color:#fff;
   margin:80px 20px 90px 20px ;
   border-radius: 5px;
-  box-shadow: 0 15px 45px -10px rgb(172, 97, 216);
+  box-shadow: 0 15px 45px -10px teal;
   transform: scale(0.9);
   opacity: 0.5;
   transition: all 0.3s;
@@ -295,7 +309,7 @@ text-align: center;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 20rem;
+      height: 12rem;
   }
 
   .contact-bg h1{
@@ -310,7 +324,7 @@ text-align: center;
       text-transform: uppercase;
       padding: 0.4rem 0;
       letter-spacing: 4px;
-      border-bottom: 5px solid teal;
+      /* border-bottom: 5px solid teal; */
   }
 
   .text {
@@ -417,6 +431,7 @@ text-align: center;
   .contact-footer {
     padding: 2rem 0;
      background: black;
+     
  }
  
  .contact-footer p{
@@ -424,6 +439,7 @@ text-align: center;
      font-size: 1.2rem;
      color: #c7c7c7;
      letter-spacing: 1px;
+     margin-bottom: 10px;
  }
  
  .contact-footer .fa{
@@ -433,11 +449,62 @@ text-align: center;
  
  }
 
+
+ .social-links{
+     display: flex;
+    
+ }
+
+ .soc{
+     text-align: center;
+     font-size: 30px;
+     padding: 15px;
+     margin-bottom:10px;
+ }
+ .fa-linkedin{
+     color:#0077B5;
+ }
+
+ .fa-github{
+     color:  #171515;
+ }
+
+
+
+
+
+ /* BACK TO TOP CSS */
+ #back2Top {
+    width: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    display: none;
+    cursor: pointer;
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    position: fixed;
+    bottom: 50px;
+    right: 0;
+    margin-right: 10px;
+    background-color: teal;;
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+}
+#back2Top:hover {
+    background-color:teal;
+    color: lightslategrey;
+}
+
  
 
  /* RESPONSIVE FOR TABLET AND DESKTOP */
 
- @media screen and(min-width:768px) {
+ @media screen and(min-width:568px) {
 h6 {
     border-bottom: 3px solid teal;
     width: 20px;
@@ -450,7 +517,7 @@ h6 {
 
      .contact-info span {
          display: grid;
-         grid-template-columns: 1fr 1fr ;
+         grid-template-columns: 1fr  ;
      }
      
  }
@@ -470,3 +537,5 @@ h6 {
  }
      
  }
+
+ 
