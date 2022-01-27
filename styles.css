@@ -1,173 +1,291 @@
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display:700|Roboto:400");
 
-body {
-    line-height: 1.2;
-    font-family: "Roboto", sans-serif;
-    font-size: 15px;
-    color: #4c4c4c; background: #1c92d2;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #f2fcfe, #1c92d2);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #f2fcfe, #1c92d2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
-      
+   @import url("https://fonts.googleapis.com/css?family=Playfair+Display:700|Roboto:400");
+   /* HEADER SECTION */
+
+    .nav-link{
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
    
-}
-  
 
-  /* For paragraph */
-  p {
-    font-weight: 400;
-    color: #4c4c4c;
-    font-size: 15px;
-    line-height: 1.8;
-    font-family: "Roboto", sans-serif;
+  }
+
+  .nav-link:hover{
+      color: black;
+      background-color: #fff;
+  }
+
+  .navbar-brand {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: #fff;
+      cursor: pointer;
+      text-decoration: none;
   }
 
 
-  /* for all heading */
-  h1, h2, h3, h4, h5, h6 {
-    color: #000;
-    font-family: "Playfair Display", serif;
-    line-height: 1.2;
+  /* MAIN SECTION CSS */
+
+  .main{
+    background: -webkit-linear-gradient(to right, #f2fcfe, #1c92d2);
+  background: linear-gradient(to right, #f2fcfe, #1c92d2);  
+ 
+
+
   }
-  
-/* PHONE */
-@media screen and (max-width: 576px) {
 
-    /* HEADER SECTION */
-nav {
-    background-color: black;
-}
-    .icon {
-      height: 60px;
-      width: 80px;
+  .main h3 {
+    font-size: 4.2rem;
+    font-weight: 700px;
+  }
 
-    }
-     
-    nav ul {
-       display: none;
-    }
+  .main h6 {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: 1px;
+    border-bottom: 3px solid purple;
+    width: 30%;
+  }
 
-    nav i.far.fa-bars{
-        display:inline;
-        color: #fff;
-        font-size: 30px;
-        float: right;
-        padding: 16px;
-        cursor: pointer;
-        
+  .main .bt1{
+height: 55px;
+width: 138px;
+background-color: purple;
+color: #fff;
+outline: none;
+border: none;
+font-weight: bold;
+border-radius: 5px;
+box-shadow: 2px;
+
+  }
+
+  .main .bt2{
+    height: 55px;
+    width: 138px;
+    background-color: purple;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 2px;
+    margin-left: 10px;
+    
       }
 
-      /* ABOUT ME SECTION */
-.container {
-    display: grid;
-    grid-column: 1/2;
-    grid-row: 1/2;
-}
-     
+      /* ABOUT SECTION BOLD */
 
-.myimg {
-    border-radius: 50%;
-    border: 2px solid darkmagenta;
-    margin-top: 30px;
-    margin-left: 8rem;
+      span {
+        font-weight: bold;
+        font-size: 20px;
+        
+      }
+/* FOR ALL H1 HEADER STYLING */
+     h1{
+font-size: 3rem;
+font-weight: 900;
+margin-top: 15px;
+text-align: center;
+      }
 
-}
-
-.bio h2 {
-    text-align: center;
-    padding-top: 10px;
-}
-.bio p {
-    font-size: 18px;
-}
-
-.resume-btn{
-    width:10rem;
-    margin-left: 10rem;
-}
+   .bio p{
+   font-size: 20px;
+ font-family:Georgia, 'Times New Roman', Times, serif
+      }
 
 
 
-
-
-/* SKILLS SECTION */
+      /* SKILLS SECTION */
 
 .skills{
-    padding: 5rem 0 2.0rem 0;
+  padding: 2rem;
 }
 
-.skills .title{
-    width: 70%;
-    margin:1.3rem auto;
-    text-align:center;
-}
+/* .skills .title{
+  width: 70%;
+  margin:1.3rem auto;
+  text-align:center;
+} */
 
-.skills .row{
-    margin: 1rem 0;
-}
+
 
 .skills .item{
-    padding:0.5rem 0;
-    margin: 0.3rem 0;
+  padding:0.3rem 0;
+  margin: 0.2rem 0;
 }
 
 .skills .item-text{
-    display: flex;
-    justify-content: flex-start;
-    font-weight: 600;
-    font-size: 1.3rem;
-    position: relative;
+  display: flex;
+  justify-content: flex-start;
+  font-weight: 600;
+  font-size: 1.3rem;
+  position: relative;
 }
-    .skills .item-text span:last-child{
-        position: absolute;
-    }
+  .skills .item-text span:last-child{
+      position: absolute;
+  }
 
-    .skills .item-text .w-90{
-        margin-left: 85%;
-    }
-    .skills .item-text .w-85{
-        margin-left: 80%;
-    }
-    .skills .item-text .w-75{
-        margin-left: 70%;
-    }
-    .skills .item-text .w-65{
-        margin-left: 60%;
-    }
-    
-   
-    .progress{
-        margin: 0.8rem 0;
-        border-radius: 10px;
-        height: 16px;
-        width: 100%;
-        background-color: white;
-        overflow: hidden;
-    }
-    .progress-bar{
-        background-color:darkviolet;
-        height: 100%;
-        border-top-right-radius: 2px;
-        border-bottom-right-radius: 2px;
-    }
-    .progress-bar.w-85{
-        width: 85%;
-    }
-    .progress-bar.w-80{
-        width: 80%;
-    }
-    .progress-bar.w-70{
-        width: 70%;
-    }
-    .progress-bar.w-60{
-        width: 60%;
+  .skills .item-text .w-90{
+      margin-left: 85%;
+  }
+  .skills .item-text .w-85{
+      margin-left: 80%;
+  }
+  .skills .item-text .w-75{
+      margin-left: 70%;
+  }
+  .skills .item-text .w-65{
+      margin-left: 60%;
+  }
+  .skills .item-text .w-55{
+    margin-left: 50%;
+}
+  
+  .progress{
+      margin: 0.8rem 0;
+      border-radius: 10px;
+      height: 16px;
+      width: 100%;
+      background-color: grey;
+      overflow: hidden;
+  }
+  .progress-bar{
+      background-color:indigo;
+      height: 100%;
+      border-top-right-radius: 2px;
+      border-bottom-right-radius: 2px;
+  }
+  .progress-bar.w-85{
+    animation: load1 3s normal forwards;
+      width: 85%;
+  }
+  .progress-bar.w-80{
+    animation: load2 3s normal forwards;
+      width: 80%;
+  }
+  .progress-bar.w-70{
+    animation: load3 3s normal forwards;
+      width: 70%;
+  }
+  .progress-bar.w-60{
+    animation: load4 3s normal forwards;
+      width: 60%;
+
+  }
+  .progress-bar.w-50{
+    animation: load5 3s normal forwards;
+    width: 50%;
+
+}
+
+/* ADDIND ANIMATION */
+
+@keyframes load1 {
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 85%;
+  }
+}
+
+@keyframes load2 {
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 80%;
+  }
+}
+@keyframes load3 {
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 70%;
+  }
+}
+@keyframes load4 {
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 60%;
+  }
+}
+/* @keyframes load5 {
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 50%;
+  }
+} */
+
+
+
+
+  /* PORTFOLIO SECTION */
+.slider {
+  margin-bottom:20px;
+  position: relative;
+}
+
+.slider .owl-item.active.center .slider-card{
+  transform: scale(1.15);
+  opacity: 1;
+  background: -webkit-linear-gradient(to right, #f2fcfe, #1c92d2);
+  background: linear-gradient(to right, #f2fcfe, #1c92d2);  
+ 
+
+}
+.slider-card {
+  background-color:#fff;
+  margin:80px 20px 90px 20px ;
+  border-radius: 5px;
+  box-shadow: 0 15px 45px -10px rgb(172, 97, 216);
+  transform: scale(0.9);
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+
+.slider-card img{
+  border-radius: 5px 5px 0px 0px ;
+}
+
+.owl-nav .owl-next {
+  position: absolute;
+ right: -50px;
+ top: 12rem;
  
  
-    }
-
-
-
-    /* MY PROJECTS SECTION */
-
-
 }
+
+.owl-nav .owl-prev {
+  position: absolute;
+ left:-50px;
+ top: 12rem;
+}
+
+.owl-nav .fa{
+  font-size: 40px;
+  color: black;
+ 
+}
+
+
+
+
+
+  /* CONTACT SECTION */
+
+
+
+
+
+
+  /* FOOTER SECTION */
