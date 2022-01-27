@@ -14,7 +14,7 @@
 
   .nav-link:hover{
       color: black;
-      background-color: #fff;
+      background-color: teal;
   }
 
   .navbar-brand {
@@ -46,14 +46,14 @@
     text-transform: uppercase;
     line-height: 1;
     letter-spacing: 1px;
-    border-bottom: 3px solid purple;
-    width: 30%;
+    border-bottom: 3px solid teal;
+    width: 22%;
   }
 
   .main .bt1{
 height: 55px;
 width: 138px;
-background-color: purple;
+background-color: teal;
 color: #fff;
 outline: none;
 border: none;
@@ -66,7 +66,7 @@ box-shadow: 2px;
   .main .bt2{
     height: 55px;
     width: 138px;
-    background-color: purple;
+    background-color: teal;
     color: #fff;
     outline: none;
     border: none;
@@ -154,7 +154,7 @@ text-align: center;
       overflow: hidden;
   }
   .progress-bar{
-      background-color:indigo;
+      background-color:teal;
       height: 100%;
       border-top-right-radius: 2px;
       border-bottom-right-radius: 2px;
@@ -283,9 +283,190 @@ text-align: center;
 
   /* CONTACT SECTION */
 
+  .contact-bg{
+      height: 40vh;
+      background: -webkit-linear-gradient(to right, #f2fcfe, #1c92d2);
+      background: linear-gradient(to right, #f2fcfe, #1c92d2);  
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      text-align: center;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 20rem;
+  }
 
+  .contact-bg h1{
+      font-size:2rem;
+      font-weight: 400;
+     
+
+  }
+
+  .contact-bg h2{
+      font-size: 3rem;
+      text-transform: uppercase;
+      padding: 0.4rem 0;
+      letter-spacing: 4px;
+      border-bottom: 5px solid teal;
+  }
+
+  .text {
+      font-weight: 300;
+      opacity: 0.9;
+  }
+
+  .contact-bg .text{
+      margin: 1.6rem 0;
+  }
+
+  .contact-body{
+      max-width:50rem ;
+      margin:0 auto;
+      padding: 0 1rem;
+  }
+
+  .contact-info{
+      margin: 2rem 0;
+      text-align: center;
+      padding: 2rem 0;
+  }
+
+  .contact-info span{
+      display: block;
+  }
+
+  .contact-info div{
+      margin: 0.8rem 0;
+      padding: 1rem;
+  }
+
+  .contact-info span .fa{
+      font-size: 2rem;
+      padding-bottom: 0.9rem;
+      color: teal;
+  }
+
+  /* .contact-info div span:nth-child(2){
+      font-weight: 500;
+      font-size: 1.1rem;
+  } */
+  .contact-info .text{
+      padding-top: 00.4rem;
+  }
+
+  /* .contact-form{
+      padding: 2rem;
+      border-top: 1px solid #c7c7c7;
+  } */
+
+  .contact-form form{
+      padding-bottom: 1rem;
+  }
+
+  .form-control{
+      width: 100%;
+      border: 1.5px solid #c7c7c7;
+      border-radius: 5px;
+      padding: 0.7rem;
+      margin: 0.6rem 0;
+      font-size: 1rem;
+      outline: 0;
+  }
+
+  .form-control:focus{
+      box-shadow: 0 0 6px -3px teal;
+  }
+
+  .contact-form form div{
+      display: grid;
+      row-gap: 0.5rem;
+  }
+
+  .send-btn{
+      font-size: 1rem;
+      text-transform: uppercase;
+      color: #fff;
+      background: teal;
+      border: none;
+      border-radius: 5px;
+      padding: 0.7rem 1.5rem;
+      cursor: pointer;
+      transition: all 0.4s ease;
+  }
+.send-btn:hover{
+    opacity: 0.8;
+}
+
+.contact-form div img{
+    width: 85%;
+}
+
+.contact-form div{
+    margin: 0 auto;
+    text-align: center;
+}
 
 
 
 
   /* FOOTER SECTION */
+
+  .contact-footer {
+    padding: 2rem 0;
+     background: black;
+ }
+ 
+ .contact-footer p{
+     text-align: center;
+     font-size: 1.2rem;
+     color: #c7c7c7;
+     letter-spacing: 1px;
+ }
+ 
+ .contact-footer .fa{
+     font-size: 1rem;
+     color: red;
+    
+ 
+ }
+
+ 
+
+ /* RESPONSIVE FOR TABLET AND DESKTOP */
+
+ @media screen and(min-width:768px) {
+h6 {
+    border-bottom: 3px solid teal;
+    width: 20px;
+}
+     .contact-bg span{
+         width: 40%;
+         margin-left: auto;
+         margin-right: auto;
+     }
+
+     .contact-info span {
+         display: grid;
+         grid-template-columns: 1fr 1fr ;
+     }
+     
+ }
+
+ @media screen and(min-width:992){
+    h6 {
+        border-bottom: 3px solid teal;
+        width: 20px;
+    }
+
+ .contact-bg .text{
+     width: 50%;
+ }
+
+ .contact-form{
+     align-items: center;
+ }
+     
+ }
