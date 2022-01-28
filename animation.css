@@ -1,0 +1,36 @@
+/* ADDIND ANIMATION */
+
+@keyframes load1 {
+    0%{
+      width: 0;
+    }
+    100%{
+      width: 85%;
+    }
+  }
+  
+  @keyframes load2 {
+    0%{
+      width: 0;
+    }
+    100%{
+      width: 80%;
+    }
+  }
+  @keyframes load3 {
+    0%{
+      width: 0;
+    }
+    100%{
+      width: 70%;
+    }
+  }
+  @keyframes load4 {
+    0%{
+      width: 0;
+    }
+    100%{
+      width: 60%;
+    }
+  }
+ 

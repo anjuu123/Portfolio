@@ -27,16 +27,20 @@
 
   <!-- MY STYLESHEET LINK -->
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="animation.css">
+  <link rel="stylesheet" href="responsive.css">
+  
   <title>My Portfolio</title>
 </head>
 
 <body>
 
   <!-- HEADER AND NAVIGATION -->
-
+  <!-- Bootstrap nav -->
 
   <nav class="navbar navbar-expand-lg  text-uppercase navbar-dark bg-dark" id="home">
       <a class="navbar-brand font-weight-bold" href="#"></a>
+
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -54,6 +58,8 @@
 
           <a class="nav-link px-lg-4 rounded" href="#projects">Projects</a>
 
+          <a class="nav-link px-lg-4 rounded" href="#skills">Skills</a>
+
           <a class="nav-link px-lg-4 rounded" href="#contact">Contact</a>
 
         </div>
@@ -67,27 +73,25 @@
 
 
   <!-- Main Section -->
+<!-- add row and column class  -->
 
   <section class="main py-5">
     <div class="container py-5">
-      <div class="row py-5">
-        <div class="col-lg-6 py-5">
+      <div class="row py-2">
           <h3><small>Hello I'm</small><br>
             Anju
           </h3>
-          <h6 class="line py-2">Developer</h6>
-
-          <input type="button" href="projects"  value="My Work" class="bt1 mt-5">
+          <input type="button" href="#"  value="My Work" class="bt1 mt-5">
           <input type="button" value="Resume" class="bt2 mt-5" href="#">
         </div>
       </div>
-    </div>
 
   </section>
 
 
 
   <!-- ABOUT SECTION -->
+
   <section class="about" id="about">
     <div class="container">
       <div class="row">
@@ -101,7 +105,6 @@
             vel. </p>
         </div>
       </div>
-
     </div>
     </div>
     </div>
@@ -111,55 +114,47 @@
   <!-- SKILLS ADDED -->
 
   <section class="skills container" id="skills">
-    <!-- <div class="title">
-              <h2>My Skills</h2>
-          </div> -->
-    <div class="row">
       <div class="item">
+
+        <!-- creating a progress bar -->
         <div class="item-text">
           <span>HTML</span>
-          <span class="w-90">85%</span>
+          <span class="text1">85%</span>
         </div>
         <div class="progress">
-          <div class="progress-bar w-85"></div>
+          <div class="progress-bar html"></div>
         </div>
       </div>
+
       <div class="item">
         <div class="item-text">
           <span>CSS</span>
-          <span class="w-85">80%</span>
+          <span class="text2">80%</span>
         </div>
         <div class="progress">
-          <div class="progress-bar w-80"></div>
+          <div class="progress-bar css"></div>
         </div>
       </div>
+
       <div class="item">
         <div class="item-text">
           <span>Javascript/JQuery</span>
-          <span class="w-75">70%</span>
+          <span class="text3">70%</span>
         </div>
         <div class="progress">
-          <div class="progress-bar w-70"></div>
+          <div class="progress-bar js"></div>
         </div>
       </div>
+
       <div class="item">
         <div class="item-text">
           <span>Bootstrap</span>
-          <span class="w-65">60%</span>
+          <span class="text4">60%</span>
         </div>
         <div class="progress">
-          <div class="progress-bar w-60"></div>
+          <div class="progress-bar boot"></div>
         </div>
       </div>
-      <!-- <div class="item">
-                <div class="item-text">
-                    <span>Bootstrap</span>
-                    <span class="w-55">50%</span>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar w-50"></div>
-                </div>
-            </div> -->
     </div>
     </div>
   </section>
@@ -275,7 +270,7 @@
       </div>
 
       <div class="contact-footer">
-    <p>Designed & Coded By Anju Dhungana<i class="fa fa-heart"></i> </p> 
+    <p>Designed & Coded By Anju Dhungana <i class="fa fa-heart"></i> </p> 
 </div>
      
     </section>

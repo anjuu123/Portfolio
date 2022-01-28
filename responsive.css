@@ -1,0 +1,44 @@
+
+ /* RESPONSIVE FOR TABLET AND DESKTOP */
+
+ @media only screen and(min-width:768px) {
+
+    .bio p{
+      font-size: 30px;
+      letter-spacing: 1px;
+    font-family:Georgia, 'Times New Roman', Times, serif
+         }
+  
+       .contact-bg span{
+           width: 40%;
+           margin-left: auto;
+           margin-right: auto;
+       }
+  
+       .contact-info span {
+           display: grid;
+           grid-template-columns: 1fr  ;
+       }
+       
+   }
+  
+   @media only screen and(min-width:1024){
+  
+    .bio p{
+      font-size: 50px;
+      letter-spacing: 1px;
+    font-family:Georgia, 'Times New Roman', Times, serif
+         }
+     
+  
+   .contact-bg .text{
+       width: 50%;
+   }
+  
+   .contact-form{
+       align-items: center;
+   }
+       
+   }
+  
+   

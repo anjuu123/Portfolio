@@ -23,14 +23,6 @@ body{
       background-color: teal;
   } 
 
-  /* .navbar-brand {
-      font-size: 1.25rem;
-      font-weight: 800;
-      color: teal;
-      cursor: pointer;
-      text-decoration: none;
-  } */
-
 .navbar-toggler{
     margin-right: 10px;
 }
@@ -44,8 +36,6 @@ body{
     background: -webkit-linear-gradient(to right, #f2fcfe, #1c92d2);
   background: linear-gradient(to right, #f2fcfe, #1c92d2);  
  
-
-
   }
 
   .main h3 {
@@ -53,25 +43,18 @@ body{
     font-weight: 700px;
   }
 
-  .main h6 {
-    font-size: 1.4rem;
-    text-transform: uppercase;
-    line-height: 1;
-    letter-spacing: 1px;
-    border-bottom: 3px solid teal;
-    width: 22%;
-  }
 
   .main .bt1{
 height: 55px;
 width: 138px;
 background-color: teal;
 color: #fff;
-outline: none;
+font-size: 1.2rem;
 border: none;
 font-weight: bold;
 border-radius: 5px;
 box-shadow: 2px;
+margin-left:10px;
 
   }
 
@@ -80,16 +63,16 @@ box-shadow: 2px;
     width: 138px;
     background-color: teal;
     color: #fff;
-    outline: none;
     border: none;
     font-weight: bold;
+    font-size: 1.2rem;
     border-radius: 5px;
     box-shadow: 2px;
     margin-left: 10px;
     
       }
 
-      /* ABOUT SECTION BOLD */
+      /* ABOUT SECTION */
 
       span {
         font-weight: bold;
@@ -119,13 +102,6 @@ text-transform: uppercase;
   padding: 2rem;
 }
 
-/* .skills .title{
-  width: 70%;
-  margin:1.3rem auto;
-  text-align:center;
-} */
-
-
 
 .skills .item{
   padding:0.3rem 0;
@@ -143,21 +119,24 @@ text-transform: uppercase;
       position: absolute;
   }
 
-  .skills .item-text .w-90{
+  /* adding margin between two span text */
+  .skills .item-text .text1{
       margin-left: 85%;
   }
-  .skills .item-text .w-85{
+  .skills .item-text .text2{
       margin-left: 80%;
   }
-  .skills .item-text .w-75{
+  .skills .item-text .text3{
       margin-left: 70%;
   }
-  .skills .item-text .w-65{
+  .skills .item-text .text4{
       margin-left: 60%;
   }
-  .skills .item-text .w-55{
+  .skills .item-text .text5{
     margin-left: 50%;
 }
+
+/*  */
   
   .progress{
       margin: 0.8rem 0;
@@ -167,98 +146,50 @@ text-transform: uppercase;
       background-color: grey;
       overflow: hidden;
   }
+
   .progress-bar{
-      background-color:teal;
-      height: 100%;
-      border-top-right-radius: 2px;
-      border-bottom-right-radius: 2px;
+      background-color:teal;  
   }
-  .progress-bar.w-85{
-    animation: load1 3s normal forwards;
+
+/* giving width to the progress bar */
+/* adding animation to load progress bar */
+  .progress-bar.html{
+    animation: load1 5s alternate forwards;
       width: 85%;
   }
-  .progress-bar.w-80{
-    animation: load2 3s normal forwards;
+  .progress-bar.css{
+    animation: load2 5s normal forwards;
       width: 80%;
   }
-  .progress-bar.w-70{
-    animation: load3 3s normal forwards;
+  .progress-bar.js{
+    animation: load3 5s normal forwards;
       width: 70%;
   }
-  .progress-bar.w-60{
-    animation: load4 3s normal forwards;
+  .progress-bar.boot{
+    animation: load4 5s normal forwards;
       width: 60%;
 
   }
-  .progress-bar.w-50{
-    animation: load5 3s normal forwards;
-    width: 50%;
-
-}
-
-/* ADDIND ANIMATION */
-
-@keyframes load1 {
-  0%{
-    width: 0;
-  }
-  100%{
-    width: 85%;
-  }
-}
-
-@keyframes load2 {
-  0%{
-    width: 0;
-  }
-  100%{
-    width: 80%;
-  }
-}
-@keyframes load3 {
-  0%{
-    width: 0;
-  }
-  100%{
-    width: 70%;
-  }
-}
-@keyframes load4 {
-  0%{
-    width: 0;
-  }
-  100%{
-    width: 60%;
-  }
-}
-/* @keyframes load5 {
-  0%{
-    width: 0;
-  }
-  100%{
-    width: 50%;
-  }
-} */
-
-
+  
 
 
   /* PORTFOLIO SECTION */
+
 .slider {
   margin-bottom:20px;
   position: relative;
 }
 
+
+/* adding transform to scale item in the center */
 .slider .owl-item.active.center .slider-card{
-  transform: scale(1.15);
+  transform: scale(1.20);
   opacity: 1;
-  background: -webkit-linear-gradient(to right, #f2fcfe, #1c92d2);
-  background: linear-gradient(to right, #f2fcfe, #1c92d2);  
  
 
 }
 .slider-card {
-  background-color:#fff;
+  background-color:teal;
   margin:80px 20px 90px 20px ;
   border-radius: 5px;
   box-shadow: 0 15px 45px -10px teal;
@@ -290,8 +221,6 @@ text-transform: uppercase;
   color: black;
  
 }
-
-
 
 
 
@@ -363,18 +292,12 @@ text-transform: uppercase;
       color: teal;
   }
 
-  /* .contact-info div span:nth-child(2){
-      font-weight: 500;
-      font-size: 1.1rem;
-  } */
+
   .contact-info .text{
       padding-top: 00.4rem;
   }
 
-  /* .contact-form{
-      padding: 2rem;
-      border-top: 1px solid #c7c7c7;
-  } */
+  
 
   .contact-form form{
       padding-bottom: 1rem;
@@ -449,6 +372,7 @@ text-transform: uppercase;
  
  }
 
+ /* SOCIAL LINKS  */
 
  .social-links{
      display: flex;
@@ -495,47 +419,5 @@ text-transform: uppercase;
     font-size: 30px;
     text-decoration: none;
 }
-#back2Top:hover {
-    background-color:teal;
-    color: lightslategrey;
-}
-
- 
-
- /* RESPONSIVE FOR TABLET AND DESKTOP */
-
- @media screen and(min-width:568px) {
-h6 {
-    border-bottom: 3px solid teal;
-    width: 20px;
-}
-     .contact-bg span{
-         width: 40%;
-         margin-left: auto;
-         margin-right: auto;
-     }
-
-     .contact-info span {
-         display: grid;
-         grid-template-columns: 1fr  ;
-     }
-     
- }
-
- @media screen and(min-width:992){
-    h6 {
-        border-bottom: 3px solid teal;
-        width: 20px;
-    }
-
- .contact-bg .text{
-     width: 50%;
- }
-
- .contact-form{
-     align-items: center;
- }
-     
- }
 
  
