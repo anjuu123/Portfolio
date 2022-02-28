@@ -5,7 +5,7 @@
       width: 0;
     }
     100%{
-      width: 85%;
+      width: 75%;
     }
   }
   
@@ -14,7 +14,7 @@
       width: 0;
     }
     100%{
-      width: 80%;
+      width: 60%;
     }
   }
   @keyframes load3 {
@@ -30,7 +30,16 @@
       width: 0;
     }
     100%{
-      width: 60%;
+      width: 70%;
+    }
+  }
+
+  @keyframes load5 {
+    0%{
+      width: 0;
+    }
+    100%{
+      width: 70%;
     }
   }
  

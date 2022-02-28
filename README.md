@@ -34,15 +34,15 @@ All time is in hours.
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Page Framework | H | 4 | | |
-| Header | H | 1.5 |  | |
-| Footer | H | 1.5 |  | |
-| "About" Section Layout | H | 2 | | |
-| "Projects" Section Layout | H | 5 |  |  |
-| Carousel Animation | H | 2 |  | |
-| "Contact" Section Layout | H | 3 |  | |
-| Hamburger Menu | H | 2 | |  |
-| Make Page Responsive | H | 3 |  | |
-| Basic Styling | H | 2 |  |  |
-| Additional Styling | M | 3 | | |
-| Additional Animation | L | 3 |  | |
-| Total | H | 32 |  |  
+| Header | H | 1.5 | 2 | |
+| Footer | H | 1.5 | 2 | |
+| "About" Section Layout | H | 2 | 4| |
+| "Projects" Section Layout | H | 5 | 7 |  |
+| Carousel Animation | H | 2 | 5 | |
+| "Contact" Section Layout | H | 3 |  4| |
+| Hamburger Menu | H | 2 | 5 |  |
+| Make Page Responsive | H | 3 | 4  | |
+| Basic Styling | H | 2 | 2 |  |
+| Additional Styling | M | 3 |3| |
+| Additional Animation | L | 3 | 2 | |
+| Total | H | 32 | 40 |  

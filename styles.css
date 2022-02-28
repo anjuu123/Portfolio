@@ -39,7 +39,7 @@ body{
   }
 
   .main h3 {
-    font-size: 4.2rem;
+    font-size: 3rem;
     font-weight: 700px;
   }
 
@@ -82,7 +82,7 @@ margin-left:10px;
 /* FOR ALL H1 HEADER STYLING */
 
      h1{
-font-size: 3rem;
+font-size: 2rem;
 font-weight: 900;
 margin-top: 3rem;
 text-align: center;
@@ -121,19 +121,19 @@ text-transform: uppercase;
 
   /* adding margin between two span text */
   .skills .item-text .text1{
-      margin-left: 85%;
+      margin-left: 75%;
   }
   .skills .item-text .text2{
-      margin-left: 80%;
+      margin-left: 60%;
   }
   .skills .item-text .text3{
       margin-left: 70%;
   }
   .skills .item-text .text4{
-      margin-left: 60%;
+      margin-left: 70%;
   }
   .skills .item-text .text5{
-    margin-left: 50%;
+    margin-left: 70%;
 }
 
 /*  */
@@ -155,19 +155,24 @@ text-transform: uppercase;
 /* adding animation to load progress bar */
   .progress-bar.html{
     animation: load1 5s alternate forwards;
-      width: 85%;
-  }
-  .progress-bar.css{
-    animation: load2 5s normal forwards;
-      width: 80%;
+      width: 75%;
   }
   .progress-bar.js{
+    animation: load2 5s normal forwards;
+      width: 60%;
+  }
+  .progress-bar.react{
     animation: load3 5s normal forwards;
       width: 70%;
   }
-  .progress-bar.boot{
+
+  .progress-bar.db{
     animation: load4 5s normal forwards;
-      width: 60%;
+      width: 70%;
+  }
+  .progress-bar.pyth{
+    animation: load5 5s normal forwards;
+      width: 70%;
 
   }
   
@@ -222,6 +227,15 @@ text-transform: uppercase;
  
 }
 
+.pinfo
+ {
+   font-size: 18px;
+   text-align: center;
+   text-decoration: none;
+   padding-left: 10rem;
+   color: #fff;
+   font-weight: bold;
+ }
 
 
   /* CONTACT SECTION */
@@ -250,7 +264,7 @@ text-transform: uppercase;
   .contact-bg h2{
       font-size: 3rem;
       text-transform: uppercase;
-      padding: 0.4rem 0;
+      padding: 0rem 0;
       letter-spacing: 4px;
       /* border-bottom: 5px solid teal; */
   }
@@ -381,11 +395,12 @@ text-transform: uppercase;
  .soc{
      text-align: center;
      font-size: 30px;
-     padding: 15px ;
-     margin:10px;
+     padding: 10px ;
+     margin:5px;
      border: 2px solid ;
      cursor: pointer;
      list-style: none;
+     margin-top: 0px;
 
 
  }
@@ -399,10 +414,7 @@ text-transform: uppercase;
      font-size: 50px;
  }
 
- .fa-envelope{
-  color:  #EA4335;
-  font-size: 50px;
-}
+ 
 
 
 
